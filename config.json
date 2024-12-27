@@ -1,0 +1,10 @@
+{
+  "core_url": "hostname.in",
+  "core_user": "report_runner",
+  "client_secret": "xxxyyyzz-xxxx-yyyy-zzzz--zzzzxxxxyyyy",
+  "PDQL_query": "select(@Host, Host.OsName, Host.Hostname, Host.@CreationTime, Host.@UpdateTime, Host.@AuditTime, Host.@Vulners, Host.@Vulners.Description, Host.@Vulners.CVEs, Host.@Vulners.SeverityRating, Host.@Vulners.Status as Status, Host.@Vulners.IssueTime, Host.@Vulners.Score as Score, Host.@Vulners.HowToFix, Host.@Vulners.VulnerableEntity, Host.@Vulners.DiscoveryTime) | sort(Host.@AuditTime DESC, Host.Hostname DESC) | filter(Score >=7) | filter(Status != 'fixed') | sort(Host.@UpdateTime DESC)",
+  "table_headers":["@Host","Host.OsName","Host.Hostname","Host.@CreationTime","Host.@UpdateTime","Host.@AuditTime","Host.@Vulners","Host.@Vulners.Description","Host.@Vulners.CVEs","Host.@Vulners.SeverityRating","Status","Host.@Vulners.IssueTime","Score","Host.@Vulners.HowToFix","Host.@Vulners.VulnerableEntity","Host.@Vulners.DiscoveryTime"],  
+  "selectedGroupIds": ["xxxyyyzz-xxxx-yyyy-zzzz--zzzzxxxxyyyy"],
+  "output_file_name":"result-vulners",
+  "output_format": "Excel"
+}
