@@ -34,7 +34,7 @@ Linux:
 `cat $(find /var/lib/deployed-roles/cat $(find /var/lib/deployed-roles/mp10-application -name "default.env") | grep -i ClientSecret -name "default.env") | grep -i ClientSecret`
 
 
-Знаения  *selectedGroupIds* для групп активов, относительно которых надо собрать данные можно получить например через VM Cli по ссылке:
+Знаения  *selectedGroupIds* для групп активов, относительно которых надо собрать данные можно получить, например, через VM Cli по ссылке:
 https://github.com/Reddoks/positive_cli
 
 Пример:
@@ -45,7 +45,7 @@ https://github.com/Reddoks/positive_cli
 
 **Запуск:**
 
-Можно запускать скрипт указывая различные файлы с параметрами, например, для разных отчетов с разыми запросами.
+Можно запускать скрипт указывая различные файлы с параметрами, например, для разных отчетов с разными запросами.
 По умолчанию скрипт ищет файл параметров 'config.json'
 
 Общий вид команды
