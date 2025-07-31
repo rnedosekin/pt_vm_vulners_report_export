@@ -38,11 +38,6 @@ Linux:
 
 'select(Host.@Groups.Path, Host.@Groups.Name, Host.@Groups.Id) | sort(Host.@Groups.Name DESC) | unique() | sort(Host.@Groups.Name ASC) | sort(Host.@Groups.Path ASC, Host.@Groups.Name ASC)'
 
-Пример:
-
-```mp asset group list```
-
-![Список групп](group_ids.png)
 
 **Запуск:**
 
