@@ -34,8 +34,9 @@ Linux:
 `cat $(find /var/lib/deployed-roles/cat $(find /var/lib/deployed-roles/mp10-application -name "default.env") | grep -i ClientSecret -name "default.env") | grep -i ClientSecret`
 
 
-Знаения  *selectedGroupIds* для групп активов, относительно которых надо собрать данные можно получить, например, через VM Cli по ссылке:
-https://github.com/Reddoks/positive_cli
+Знаения  *selectedGroupIds* для групп активов, относительно которых надо собрать данные можно получить, например, через запрос:
+
+'select(Host.@Groups.Path, Host.@Groups.Name, Host.@Groups.Id) | sort(Host.@Groups.Name DESC) | unique() | sort(Host.@Groups.Name ASC) | sort(Host.@Groups.Path ASC, Host.@Groups.Name ASC)'
 
 Пример:
 
