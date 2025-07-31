@@ -36,7 +36,7 @@ Linux:
 
 Знаения  *selectedGroupIds* для групп активов, относительно которых надо собрать данные можно получить, например, через запрос:
 
-'select(Host.@Groups.Path, Host.@Groups.Name, Host.@Groups.Id) | sort(Host.@Groups.Name DESC) | unique() | sort(Host.@Groups.Name ASC) | sort(Host.@Groups.Path ASC, Host.@Groups.Name ASC)'
+`select(Host.@Groups.Path, Host.@Groups.Name, Host.@Groups.Id) | sort(Host.@Groups.Name DESC) | unique() | sort(Host.@Groups.Name ASC) | sort(Host.@Groups.Path ASC, Host.@Groups.Name ASC)`
 
 
 **Запуск:**
